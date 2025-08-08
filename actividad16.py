@@ -66,7 +66,7 @@ while True:
             case _:
                 print("¡Opción no válida!")
     except ValueError:
-        print("ERROR, debes ingresar un número entero.")
+        print("ERROR, debes ingresar un número entero.\n")
 
 
 
