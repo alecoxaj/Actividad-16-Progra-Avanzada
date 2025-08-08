@@ -33,7 +33,7 @@ def mostrar_libros():
         print()
 
 def eliminar_libro():
-    libro_buscado = input("Ingresa el nombre del libro para eliminar: ")
+    libro_buscado = input("Ingresa el título del libro para eliminar: ")
     encontrado = False
     for datos_libro in libros:
         if datos_libro.titulo.lower() == libro_buscado.lower():
