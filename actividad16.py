@@ -1,11 +1,11 @@
 class Libros:
     def __init__(self, título, autor, year):
-        self.título = título
+        self.titulo = título
         self.autor = autor
         self.year = year
 
     def mostrar_info(self):
-        print(f"Título {self.título} su autor es: {self.autor} y el año de lanzamiento fue: {self.year}")
+        print(f"Título: {self.titulo}. su autor es: {self.autor} y el año de lanzamiento fue: {self.year}")
 
 libros = []
 
@@ -15,7 +15,7 @@ def agregar_libros():
         autor_nombre = input("Ingresa el nombre del autor: ")
         year_lanzamiento = int(input("Ingresa el año de lanzamiento: "))
         datos_libro = Libros(libro_nombre, autor_nombre, year_lanzamiento)
-        libros.append(libro_nombre)
+        libros.append(datos_libro)
         print("Libro agregado exitosamente")
     except ValueError:
         print("El año de lanzamiento debe ser un entero")
