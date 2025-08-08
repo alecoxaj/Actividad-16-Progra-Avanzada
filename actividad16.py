@@ -32,5 +32,17 @@ def mostrar_libros():
             i += 1
         print()
 
+def eliminar_libro():
+    libro_buscado = input("Ingresa el nombre del libro para eliminar: ")
+    encontrado = False
+    for datos_libro in libros:
+        if datos_libro.titulo.lower() == libro_buscado.lower():
+            libros.remove(datos_libro)
+            print("Libro eliminado exitosamente.\n")
+            encontrado = True
+            break
+    if not encontrado:
+        print("Libro no encontrado.\n")
+
 
 
