@@ -44,5 +44,29 @@ def eliminar_libro():
     if not encontrado:
         print("Libro no encontrado.\n")
 
+while True:
+    print("MENÚ: ")
+    print("1. Agregar libro")
+    print("2. Mostrar lista de libros")
+    print("3. Eliminar libro por título")
+    print("4. Salir")
+
+    try:
+        option = input("Introduce una opción (1-4): ")
+        match option:
+            case "1":
+                agregar_libros()
+            case "2":
+                mostrar_libros()
+            case "3":
+                eliminar_libro()
+            case "4":
+                print("Programa finalizado. Saliendo...")
+                break
+            case _:
+                print("¡Opción no válida!")
+    except ValueError:
+        print("ERROR, debes ingresar un número entero.")
+
 
 
